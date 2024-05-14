@@ -1,39 +1,10 @@
-.box {
-    width: 150px;
-    height: 120px;
-    border: 1px solid #000;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-}
-
-.button {
-    border: 1px solid #000;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.blue-button {
-    background-color: blue;
-    color: white;
-}
-
-.green-button {
-    background-color: green;
-    color: white;
-}
-
-.active {
-    background-color: yellow;
-    /* Highlight active box */
-}
-
-body {
+.boxes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 boxes{
@@ -41,3 +12,59 @@ boxes{
     justify-content: center;
     align-items: center;
 }
+
+.box {
+    width: 220px;
+    height: 160px;
+    border: 1px solid #000;
+    text-align: center;
+    /* padding: 2px; */
+}
+
+.button {
+    width: 100%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.green{
+    background-color: green;
+    color: #fff;
+}
+
+.btn{
+   display: flex;
+}
+
+.boxes .btn button:nth-child(2) {
+   background-color: darkblue;
+   color: #fff;
+}
+
+.two {
+    padding: .7rem;
+    margin-top: 2.30rem;
+    border-right: none;
+}
+
+.white{
+    padding: .7rem;
+    margin-top: 1.7rem;
+    border: none;
+    border-right: 1px solid black;
+    border-top: 1px solid #000;
+}
+
+.three{
+    padding: .5rem;
+}
+
+.left-border{
+   border-left: none
+}
+
+.right-border{
+    border-right: none;
+}
+
